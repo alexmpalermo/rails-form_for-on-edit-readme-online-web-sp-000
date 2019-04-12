@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  
-  patch 'posts/:id', to: 'posts#update'
+   resources :articles, only: %i[index show new create edit update]
+ 
 end
